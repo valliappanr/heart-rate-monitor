@@ -239,7 +239,7 @@ func main() {
 	}()
 
 
-	f, err := os.OpenFile("/root/hrmmanager/hrm.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
+	f, err := os.OpenFile("/opt/hrmmanager/hrm.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	if err != nil {
 		return // Ah-oh. Unable to log to file.
 	}
